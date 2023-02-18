@@ -12,7 +12,7 @@
 
 - Faire confiance à son gouvernement fait partie des solutions les moins viables. Les gouvernements n'ont généralement aussi développé dans le domaine que les organisations privées. Cela étant dû à un manque d'investissements. De plus, des organisations étatiques comme la NSA préfèrent garder leurs connaissances pour leurs usages.
 
-- 
+- Ecrire votre proper algorithme peut être une solution, 
 
 ### 10.2 PUBLIC-KEY CRYPTOGRAPHY VERSUS SYMMETRIC CRYPTOGRAPHY
 ### 10.3 ENCRYPTING COMMUNICATIONS CHANNELS
