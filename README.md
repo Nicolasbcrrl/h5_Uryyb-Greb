@@ -20,10 +20,26 @@
 
 - Le seul moyen de prouver que la NSA peut casser un algorithme est de crypter un information si importante que sa diffusion mérite de prouvé que la NSA peut venir à bout de l'alogorithme.
 
-- Comme le dit l'auteur dans son livre, "**A good working assumption is that the NSA can read any message that it chooses, but that it cannot read all messages that it chooses.**" .
+- Comme le dit l'auteur dans son livre, "**A good working assumption is that the NSA can read any message that it chooses, but that it cannot read all messages that it chooses.**".
+
+- Tout algorithmes exportés hors des Etats-Unis doivent être approuvés par le gouvernement américain.
+
+- Il est admis que les alogorithm validé par le gouvernemennt américain, peuvent être cassé par la NSA.
+
+- La NSA détient tous les codes sources des algorithms approuvé par le gouvernement pour l'exportation.
 
 ### 10.2 PUBLIC-KEY CRYPTOGRAPHY VERSUS SYMMETRIC CRYPTOGRAPHY
+
+- La cryptographie à clé publique et la cryptographie symétrique ne peuvent pas être comparé, car elles sont différente et résolvent des problèmes différents. 
+
+- Pour le cryptage de données, l'utilisation de la cryptographie est la meilleurs solution. Elle est plus rapide et n'est pas soumise au risque des attaque par choix de texte chiffré. 
+
+- La cryptographie à clé publique peut être utilisé pour la gestion des clés et un grand nombre de protocole, chose pour laquel la cryptographie symétique ne peut pas être utilisé. 
+
 ### 10.3 ENCRYPTING COMMUNICATIONS CHANNELS
+
+
+ 
 ### 10.4 ENCRYPTING DATA FOR STORAGE
 
 ## Sources
