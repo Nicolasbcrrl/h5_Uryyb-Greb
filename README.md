@@ -82,9 +82,23 @@
 
 - Cependant, cette approche est la plus coûteuse en raison de la nécessité de mettre en œuvre les deux systèmes de cryptage.
 
-
 ### 10.4 ENCRYPTING DATA FOR STORAGE
 
+- le modèle Alice et Bob peut également être appliqué au chiffrement de données, mais le problème est fondamentalement différent dans le cadre du stockage de données.
+
+- Les messages en transit dans les canaux de communication peuvent être renvoyés si nécessaire, mais si les données cryptées pour le stockage sont perdues, elles sont perdues à jamais. Les applications de chiffrement pour le stockage de données doivent donc disposer de mécanismes pour éviter les erreurs irrécupérables.
+
+- la clé de chiffrement est plus petite que le message. 
+
+- Les procédures de gestion et de conservation des clés doivent tenir compte du fait qu'elle peutvent être utilisées à plusieurs reprises pendant plusieurs années pour accèder à des données cryptées à n'importe quel moment. les clés doivent donc être conservées pendant longtemps et doivent être stockées en toute sécurité.
+
+- Il existe un risque que les données crytées soit disponible en claire sur un autre ordinateur, se qui rend le cryptage inutile. 
+
+- Il faut s'assurer que le fichier non crypté est effacé après son cryptage. 
+
+
 ## Sources
+
+[learning.oreilly.com](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/19_chap10.html)
 
 ---
