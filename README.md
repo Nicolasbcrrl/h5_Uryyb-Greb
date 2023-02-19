@@ -54,12 +54,35 @@
 
 - Cependant, pour que cette solution fonctionne il faut que chaque lien physique du réseau doivent être protéger. 
 
-- Le fait de possèder un gros réseau peut également mettre un frein à la mise ne place de cette solution, car elle devient très vite très coûteuse.
+- Le fait de possèder un gros réseau peut également mettre un frein à la mise en place de cette solution, car elle devient très vite très coûteuse.
+
+#### End-to-End Encryption
 
 - L'encryption end-to-end va crypter des données de manière sélective et premanante, jusqu'à ce que le destinataire les reçoivents.
 
+- L'équipement de cryptage est placé entre la couche réseau et la couche transport.
 
- 
+- L'encryption end-to-end permet d'éviter le cryptage et décryptage au niveau de la couche physique.
+
+- les information d'achminement ne sont pas cryptés. Ce qui permet de les analyser.
+
+- L'opération de cryptage peu être rendue transparante pour l'utilisateur et un seul jue de clé par liaison suffi.
+
+- La mis en place d'un équipement de cryptage end-to-end peut être compliqé en raison des protocoles spécifique à chaque système de communication. 
+
+- Une alternative serait d'effectuer le cryptage à des couches supérieurs de l'architecture de communication, mais cela peut également poser des problème en terme de compatibilité.
+
+#### Combining the Two
+
+- Avec la combinaison des deux approche on obtient un niveau de sécurité plus élevé.
+
+- Tout les liens physique sont crypté. Cela empèche toutes exposition des données aux noeuds intermédaire et également toute analyse du trafic. 
+
+- Afin de simplifier la gestion des clés, la charge peut être répartie pour les deux systèmes.
+
+- Cependant, cette approche est la plus coûteuse en raison de la nécessité de mettre en œuvre les deux systèmes de cryptage.
+
+
 ### 10.4 ENCRYPTING DATA FOR STORAGE
 
 ## Sources
