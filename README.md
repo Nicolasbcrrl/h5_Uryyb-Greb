@@ -38,6 +38,26 @@
 
 ### 10.3 ENCRYPTING COMMUNICATIONS CHANNELS
 
+- Le cryptage des données peut intervenir dans n'importe quelle couche du model de communication OSI.
+
+- En pratique le cryptage à lieu dans les couches le plus basse, les couches 1 et 2, soit dans les couches les plus haute. Dans les couches les plus basse, on va parler de link-by-link encryption. Pour les couches supérieurs, on parle alors de end-to-end encryption.
+
+#### Link-by-Link Encryption
+
+- Ce type de cryptage est mis en place dans la couche physique du réseau. Cela est dû au fait que c'est l'endroit le plus simple pour le mettre en place, grâce à la nomalisation des interrfaces et à facilité de connection avec des dispositifs de chiffrement matériel.
+
+- L'encryption link-by-link est très efficace, car il va encrypter toutes les données, les information de routage et les informations protocolaires qui passent par lui.
+
+- Ce type de cryptage est appelé **traffic-flow security**. 
+
+- Un adversaire face à ce type de cryptage ne pourra pas acceder à l'information mais il ne pourra également pas l'endroit et la quantité des données en circulation sur le réseau.
+
+- Cependant, pour que cette solution fonctionne il faut que chaque lien physique du réseau doivent être protéger. 
+
+- Le fait de possèder un gros réseau peut également mettre un frein à la mise ne place de cette solution, car elle devient très vite très coûteuse.
+
+- L'encryption end-to-end va crypter des données de manière sélective et premanante, jusqu'à ce que le destinataire les reçoivents.
+
 
  
 ### 10.4 ENCRYPTING DATA FOR STORAGE
