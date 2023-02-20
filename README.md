@@ -124,3 +124,58 @@ Bitwarden fournit plusieurs fonctionnalitées qui permettent d'améliorer la sé
 - Bitwarden peut également produire un rapport avec tout les site internet qu'il ne juge pas sécurisé. Tout site internet n'utilisant pas le cryptage TLS/SSL est considérer comme non sécurisé.
 
 - Avec Bitwarden vous pouvez mettre en place la connection à double facteur qui permet le renforcement de la sécurité lors de la connection au gestionnaire. 
+
+### What information is encrypted, what's not?
+
+Bitwarden utilise un chiffrement de bout en bout pour toutes les données de la zone de l'utilsateur qu'ils appelent le coffre-fort. Seul l'e-mail et le mot de passe de l'utilisateur peuvent déchiffrer les données contenu dans le coffre-fort. Les donneés sont cryptées avant même de quitter l'appareil de l'utilisateur. L'equipe de Bitwarden ne stock que des données chiffrée. 
+Ils utilisent AES-CBC 256-bit pour les données contenu dans le coffre-fort et PBKDF2 SHA-256 ou Argon2 pour dériver la clé de chiffrement de l'utilisateur.
+
+### What's the license? How would you describe license's effects or categorize it?
+
+Bitwarden est un gestionnaire de mot de passe open source dévelopé par 8bit Solutions LLC et mis en circulation en 2015 sous la licence GNU GPLv3.
+
+La licence GNU GPL v3 permet à une personne de prendre le code source et d'y apporter des modification puis de distribuer votre version. Mais en contre partie, votre version sera également soumise aux mêmes exigences de licence. En d'autre terme, votre version devra également être sous lincence GNU GPLv3.
+
+### Where is the data stored? If in "the cloud", which country / juristiction / which companies? If on local disk, where?
+
+Bitwarden utilise un infrasturcture cloud pour le stockage de données de ces utilisateurs. Les données sont stocké chez Microsoft Azure aux États-Unis. Le fait que les données sont conservée par des entreprise américaine, ces dernières sont soumise à la politique du US Cloud Ac, qui permet au gouvernement américain dans le cadre d'une enquête à pouvoir accèder aux données de l'entreprise. Cependant, Bitwarden étant un logiciel open source, cela vous permet de l'héberger vous même. 
+
+Concernant les données qui sont stockées sur vos appareils en local, elles sont cryptées et le reste jusqu'à votre connection au service. Les données décryptées sont uniquement sotcké en mémoire et ne sont jamais écrite sur un support de manière permanente. 
+
+Comme le montre le site internet de [Bitwarden](https://bitwarden.com/help/data-storage/), les données sont stocké à ces emplacement sur votre machine local : 
+
+- Windows
+
+  - Standard installation: %AppData%\Bitwarden
+
+  - Microsoft Store installation: %LocalAppData%\Packages\8bitSolutionsLLC.bitwardendesktop_h4e712dmw3xyy\LocalCache\Roaming\Bitwarden
+
+  - Portable: .\bitwarden-appdata
+  
+- macOS
+
+  - Standard installations: ~/Library/Application Support/Bitwarden
+
+  - Mac App Store: ~/Library/Containers/com.bitwarden.desktop/Data/Library/Application Support/Bitwarden
+
+- Linux
+
+  - Standard installations: ~/.config/Bitwarden
+
+  - Snap: ~/snap/bitwarden/current/.config/Bitwarden
+
+### How is the data protected?
+
+Comme expliqué ci-dessus, toutes les données du vault data de l'utilisateur sont crypter en utilisant l'encryptage AES-CBC 256-bit. Le mots de passe d'accès au gestionnaire est salts et hashes avec l'adresse mail de l'utilisateur en local avant l'envoie au server de Bitwarden. Quand le mot de passe hashed arrive dans les servers de Bitwarden, il est denouveau salé avec une cryptographically secure random value et il est ensuite denouveau hashed et finalement stocké.
+
+## Sources
+[bitwarden.com](https://bitwarden.com/)
+
+[bitwarden.com - data storage](https://bitwarden.com/help/data-storage/)
+
+[bitwarden.com - what encryption is used](https://bitwarden.com/help/what-encryption-is-used/)
+
+[uk.pcmag.com](https://uk.pcmag.com/password-managers/121377/bitwarden)
+
+--------
+
