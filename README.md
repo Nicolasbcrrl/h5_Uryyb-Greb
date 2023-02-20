@@ -214,7 +214,7 @@ Il vous suffit juste de cliqué sur **options**. Les options vous permettes éga
 
 ![options](options.PNG)
 
-Finalement, il vous reste à mettre l'URI du site internet. Si vous utilisé l'extention du navigateur, les champs **nom** et **URI** seront automatiquement remplis.
+Finalement, il vous reste à mettre l'URI du site internet. Si vous utilisé l'extention du navigateur, les champs **Nom** et **URI** seront automatiquement remplis.
 
 ![after](after_creation.PNG)
 
