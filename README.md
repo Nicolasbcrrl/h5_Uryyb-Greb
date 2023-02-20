@@ -102,3 +102,25 @@
 [learning.oreilly.com](https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/19_chap10.html)
 
 ---
+
+## Password Manager
+
+### Bitwarden
+
+**Bitwarden** est un gestionnaire de mots de passe gratuit et open source. Il vous permet de genérer, stocker et gérer vos identifiants et mots de passes. Il vous permet également de gérer les information de vos cartes de crédit et autre données sensible. 
+
+Etant basé sur le cloud, il vous permet ainsi d'avoir accès à vos inforamtions peut importe votre localisation. Vous pouvez accèder au service en utilisant leurs application, leurs site internet ou en installant l'extention sur votre navigateur. Cette outil est compatible **Windows**, **macOS**, **Linux**, **IOS** et **Android**. Comme indiqué ci-dessus, il peut être utilisé comme extention de votre navigateur web comme **Google Chrome**, **Firefox** et **Microsoft Edge**.
+
+### What treaths does it protect against?
+
+Bitwarden fournit plusieurs fonctionnalitées qui permettent d'améliorer la sécurité de vos données par la sécurisation du stockage de vos identifiants et passwords.
+
+- La fonctionnalité de génération de passwords permet de créer des passwords faible et évite à l'utilisateur d'utiliser un seul password pour plusieurs comptes. Bitwarden peut générer des mot de passe de 5 à 128 caractères et en utilisant tous les jeux de caractères.
+
+- La fonctionnalité automatic filling lors de vos connections à vos différents comptes, empêche les attaques de type keylogging.
+
+- Bitwarden vous offre la possibilité de controler si vos passwords ont été exposé. Il peut également générer un raport des mots de passe exposés.
+
+- Bitwarden peut également produire un rapport avec tout les site internet qu'il ne juge pas sécurisé. Tout site internet n'utilisant pas le cryptage TLS/SSL est considérer comme non sécurisé.
+
+- Avec Bitwarden vous pouvez mettre en place la connection à double facteur qui permet le renforcement de la sécurité lors de la connection au gestionnaire. 
