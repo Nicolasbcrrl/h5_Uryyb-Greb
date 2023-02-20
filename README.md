@@ -179,3 +179,21 @@ Comme expliqué ci-dessus, toutes les données du vault data de l'utilisateur so
 
 --------
 
+## Demonstrate the use of a password manager
+
+Dans cette partie je vais continuer avec le gestionnaire de mot de passe Bitwarden. Je vais vous montrer comment l'utiliser. Je tiens à m'excuser certaines images seront en français car Bitwarden établie la langue en fonction de la langue du system.
+
+1. Pour commencer il vous faut créer un compte sur la page officiel de Bitwarden. 
+
+2. Vous avez plusieur possibilité pour accéder à votre gestionnaire de mot de passe : 
+  - la première est à travers la page internet de Bitwarden. Il vous suffit de vous connecter et le site va vous rediriger vers votre gestionnaire de mot de passe.
+  - la seconde option est de télécharger l'application sur votre appareil (oridnateur, téléphone). 
+  - Finalment la troisième option est de télécharger l'extention pour votre navigateur internet. Dans mon cas j'utilise **Brave** donc j'ai télécharger l'extention pour ce navigateur.
+  
+3. Après avoir choisi le moyen l'option qui vous convient le plus, vous pouver cliquer sur l'incone **+** pour ajouter un nouvel identifiant. Cela va vous permettre d'entrer un nom au nouvel ensemble d'identifiant,  ainsi que votre nom d'utilisateur (qui peut être générer automatiquement par Bitwarden) et générer le mot de passe automatiquement. Dans mon cas, le mot de passe fait 50 caratères, mais cela peut être modifier au moment de la génération. Il vous suffit juste de cliqué sur **options**. Les options vous permettes également de intégrer ou pas différents caractères à votre mot de passe. 
+
+Finalement, il vous reste à mettre l'URI du site internet. Si vous utilisé l'extention du navigateur, les champs **nom** et **URI** seront automatiquement remplis. Bitwarden vous offre la possibilité de vérifier si votre mot de passe n'a pas été compromis en cliquant sur le logo en forme de **vue**
+
+4. Maintenant, vous pouvez essayer votre gestionaire de mot de passe en vous rendant sur le site internet qui heberge le compte pour lequel vous avez créé vos identifaint. Dans cette exemple, j'ai créé des identifiants pour mon compte Gmail.
+
+
