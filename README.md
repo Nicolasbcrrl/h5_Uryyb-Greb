@@ -250,6 +250,8 @@ Ensuite, j'ai créé un groupe avec le nouvel utilisateur, afin que seulement le
     
 Afin d'effectuer le partage des information entre moi et le nouvel utilisateur, j'ai créer un nouveau repertoir dans mon répertoir **Public/** que j'ai appelé **exkeys/**. J'ai mis le groupe que j'ai créer en tant que owner du répertoir, afin de permettre l'accès seulment aux utilisateur du groupe. 
 
+![exkeys](exkeys.PNG)
+
 > Pour créer un nouveau répertoir, vous pouvez exécuter la commande suivante : 
 
    $ mkdir [name of the directory]
@@ -260,6 +262,8 @@ Afin d'effectuer le partage des information entre moi et le nouvel utilisateur, 
    $ chown [new owner] [element] # change owner
 
 Suite à cela, j'ai créé un notre répertoir dans le répertoir **exkeys/**, que j'ai appeler **keys/**. 
+
+![keys](keys.PNG)
 
 ### Création des clés
 
@@ -304,3 +308,6 @@ Finalement, après avoir encrypté le message et l'avoir mis dans le répertoir,
 
     $ gpg decrypt [file with the message] > [file] # this comand allows you to decrypt and copy all the content into a new file
     $ cat [file with all the decrypted content]
+
+![Nmessage](nMessage.PNG)
+![Vmessage](vMessage.PNG)
