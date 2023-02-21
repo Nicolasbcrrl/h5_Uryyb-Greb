@@ -169,6 +169,7 @@ Comme le montre le site internet de [Bitwarden](https://bitwarden.com/help/data-
 Comme expliqué ci-dessus, toutes les données du vault data de l'utilisateur sont crypter en utilisant l'encryptage AES-CBC 256-bit. Le mots de passe d'accès au gestionnaire est salts et hashes avec l'adresse mail de l'utilisateur en local avant l'envoie au server de Bitwarden. Quand le mot de passe hashed arrive dans les servers de Bitwarden, il est denouveau salé avec une cryptographically secure random value et il est ensuite denouveau hashed et finalement stocké.
 
 ## Sources
+
 [bitwarden.com](https://bitwarden.com/)
 
 [bitwarden.com - data storage](https://bitwarden.com/help/data-storage/)
@@ -226,3 +227,68 @@ Bitwarden vous offre la possibilité de vérifier si votre mot de passe n'a pas 
 
 ![gmail](gmail_test.PNG)
 
+## Sources
+
+[bitwarden.com](https://bitwarden.com/)
+
+------ 
+
+## Encrypt and decrypt a message
+
+Dans cette partie, je vais vous montrer comme encrypter et decrypter une  message entre deux utilisateurs. Pour les besoins de cette exercice, j'ai créé une second utilisateur sur mon system. 
+
+> Pour créer un nouvel utilisateur dans votre système vous pouvez exécuter la commande suivante :
+
+    $ sudo adduser [username of the new user] 
+    
+Ensuite, j'ai créé un groupe avec le nouvel utilisateur, afin que seulement les membres du groupe puissent accèder à notre échange de clé et de message. La création d'un groupe permet une meilleur gestion des permission et permet d'éviter l'oublie de retirer les accès à un utilisateur qui n'a plus accès à certain fichier ou répertoir.
+
+> Pour créer un groupe et ajouter des utilisateurs, vous pouvez exécuter les commandes suivante :
+
+    $ addgroup [name of the group]
+    $ adduser [username] [group]
+    
+Afin d'effectuer le partage des information entre moi et le nouvel utilisateur, j'ai créer un nouveau repertoir dans mon répertoir **Public/** que j'ai appelé **exkeys/**. J'ai mis le groupe que j'ai créer en tant que owner du répertoir, afin de permettre l'accès seulment aux utilisateur du groupe. 
+
+> Pour créer un nouveau répertoir, vous pouvez exécuter la commande suivante : 
+
+   $ mkdir [name of the directory]
+   
+> Pour changer les permissions et le owner d'un element, vous pouvez exécuter les commandes suivantes : 
+
+   $ chmod [permissions] [element] # change permissions 
+   $ chown [new owner] [element] # change owner
+
+Suite à cela, j'ai créé un notre répertoir dans le répertoir **exkeys/**, que j'ai appeler **keys/**. 
+
+### Création des clés
+
+Pour la création de ma clé et celle de l'autre utilisateur, j'ai utilisé **gpg**. Pour permettre l'encryption des messages et par la suite leurs décryption, il nous faut à la fois pour moi la clé public du destinataire et vis-versa. Car si je crypte le message avec ma clé, je serais l'unique personne à pouvoir la décrypté car je suis l'unique personne à connaitre ma clé privée. 
+
+> pour créer votre clé gpg, vous pouvez exectuter la commande suivante : 
+
+    $ gpg --generate-key 
+    
+ > pour voir votre clé, vous pouvez éxécuter la commande suivante :
+ 
+    $ gpg --fingerprint
+    
+Après  avoir créé les clés pour le destinataire et moi-même, j'ai copie ma clé public et celle du destinataire dans deux fichier différents et je les ai déplacer dans le répertoir **keys** que j'ai mentionné précedement.
+  
+> Pour générer un fichier avec votre clé public, vous pouvez éxécuter la commande suivante : 
+
+    $ gpg --armor > [filname]
+    
+> Pour déplacer un fichier, comme par exemple le fichier contenant votre clé public, dans un autre répertoir. Vous pouvez éxécuter la commande suivante :
+
+    $ mv [file] [destination]
+    
+Finalement en me connectant au différent compte, j'ai importé les clés public en prévision du decryptage des messages. J'ai importé la clé du destinataire et le destinataire a importé ma clé. 
+
+> Pour importer la clé public d'un autre utilisateur, vous pouvez éxécuter la commande suivante : 
+
+    $ gpg --import [file with key]
+    
+### Encryption et Décrytion d'un message
+
+Maintenant que je suis en posséssion de la clé public du destinataire et lui de la mienne. Je peux maintenant créer mon message en le cryptant avec **ça clé public** et déplacer le message crypté dans 
