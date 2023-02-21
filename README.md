@@ -300,7 +300,7 @@ Maintenant que je suis en posséssion de la clé public du destinataire et lui d
     
 Finalement, après avoir encrypté le message et l'avoir mis dans le répertoir, j'ai décrypté le message que l'autre utilisateur m'a envoyé. J'ai également décrypté mon message en me connectant au compte du destinataire pour vérifier le bon fonctionnement.
 
-> Pour décrypter et lire un ficher qu'on vous à envoyer, vous pouvez éxécuter les commandes suivante :
+> Pour décrypter et lire un ficher qu'on vous a envoyé. Vous pouvez éxécuter les commandes suivante :
 
     $ gpg decrypt [file with the message] > [file] # this comand allows you to decrypt and copy all the content into a new file
     $ cat [file with all the decrypted content]
