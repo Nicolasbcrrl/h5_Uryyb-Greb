@@ -291,4 +291,16 @@ Finalement en me connectant au différent compte, j'ai importé les clés public
     
 ### Encryption et Décrytion d'un message
 
-Maintenant que je suis en posséssion de la clé public du destinataire et lui de la mienne. Je peux maintenant créer mon message en le cryptant avec **ça clé public** et déplacer le message crypté dans 
+Maintenant que je suis en posséssion de la clé public du destinataire et lui de la mienne. Je peux maintenant créer mon message en le cryptant avec **ça clé public** et déplacer le message crypté dans le répertoir commun **exkeys/**.
+
+> Pour la création d'un fichier texte et l'encryption de ce même fichier, vous pouvez éxécuter les commandes suivante : 
+
+    $ nano [filename]
+    $ gpg --encrypt --recipient [mail adress of the recipient] --sign --armor [filename]
+    
+Finalement, après avoir encrypté le message et l'avoir mis dans le répertoir, j'ai décrypté le message que l'autre utilisateur m'a envoyé. J'ai également décrypté mon message en me connectant au compte du destinataire pour vérifier le bon fonctionnement.
+
+> Pour décrypter et lire un ficher qu'on vous à envoyer, vous pouvez éxécuter les commandes suivante :
+
+    $ gpg decrypt [file with the message] > [file] # this comand allows you to decrypt and copy all the content into a new file
+    $ cat [file with all the decrypted content]
