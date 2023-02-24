@@ -264,7 +264,7 @@ As a result, I created our own directory in the **exkeys/** directory, which I c
 
 ![keys](keys.PNG)
 
-### Création des clés
+### Creation of keys
 
 For the creation of my key and that of the other user, I used **gpg**. In order to encrypt the messages and then decrypt them, we need both the recipient's public key and my own. Because if I encrypt the message with my key, I will be the only person who can decrypt it because I am the only person who knows my private key. 
 
@@ -292,7 +292,7 @@ Finally, when I logged into the different account, I imported the public keys in
 
     $ gpg --import [file with key]
     
-### Encryption et Décrytion d'un message
+### Encryption and Decryption of a message
 
 Now that I have the recipient's public key and he has mine. I can now create my message by encrypting it with **his public key** and move the encrypted message to the common **exkeys/** directory.
 
