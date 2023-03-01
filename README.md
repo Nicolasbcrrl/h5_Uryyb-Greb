@@ -309,7 +309,7 @@ Finally, after encrypting the message and putting it in the directory, I decrypt
 
 > To decrypt and read a file sent to you. You can run the following commands :
 
-    $ gpg decrypt [file with the message] > [file] # this comand allows you to decrypt and copy all the content into a new file
+    $ gpg --decrypt [file with the message] > [file] # this comand allows you to decrypt and copy all the content into a new file
     $ cat [file with all the decrypted content]
 
 ![Nmessage](nMessage.PNG)
