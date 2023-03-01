@@ -257,8 +257,11 @@ In order to share the information between myself and the new user, I created a n
    
 > To change the permissions and owner of an element, you can run the following commands : 
 
-   $ chmod [permissions] [element] # change permissions 
-   $ chown [new owner] [element] # change owner
+
+   $ sudo chmod [permissions] [element] # change permissions 
+   
+   $ sudo chown [new owner] [element] # change owner
+   
 
 As a result, I created our own directory in the **exkeys/** directory, which I called **keys/**. 
 
@@ -280,7 +283,7 @@ After creating the keys for the recipient and myself, I copied my public key and
   
 > To generate a file with your public key, you can run the following command : 
 
-    $ gpg --armor > [filname]
+    $ gpg --export --armor > [filname]
     
 > To move a file, such as the file containing your public key, to another directory. You can run the following command :
 
