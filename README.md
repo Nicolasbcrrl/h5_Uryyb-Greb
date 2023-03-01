@@ -245,6 +245,7 @@ Then I created a group with the new user, so that only members of the group coul
 > To create a group and add users, you can run the following commands :
 
     $ addgroup [name of the group]
+    
     $ adduser [username] [group]
     
 In order to share the information between myself and the new user, I created a new directory in my **Public/** directory which I called **exkeys/**. I set the group I created as the owner of the directory, so that only users in the group can access it. 
